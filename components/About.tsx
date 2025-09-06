@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import About_1 from '@/public/about-1.jpg'
-
+import { SECTION_IDS } from '@/config/site';
 
 const About = () => {
   return (
-    <section className="min-h-screen text-white flex justify-center items-center p-4">
+    <section id={SECTION_IDS.ABOUT} className="min-h-screen text-white flex justify-center items-center p-4">
         <div className="max-w-5xl w-full lg:pt-10 pt-0">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-purple">About Me</h2>

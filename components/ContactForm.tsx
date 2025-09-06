@@ -1,15 +1,14 @@
 'use client'
-import React, { useState} from 'react'
+import React, { useState, FormEvent } from 'react'
 import { motion } from 'framer-motion'
-import { 
-  Send, 
-  Mail, 
-  Phone, 
-  MessageSquare, 
-  Github, 
-  Linkedin, 
-  Twitter, 
-  Facebook, 
+import {
+  Send,
+  Mail,
+  Phone,
+  MessageSquare,
+  Github,
+  Linkedin,
+  Facebook,
   Instagram,
   Sparkles
 } from 'lucide-react'
@@ -58,7 +57,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container max-w-7xl w-full sm:px-4 py-10 relative" id="contact">
+    <div className="container w-full sm:px-4 py-10 relative" id="contact">
       <h2 className="text-center text-2xl sm:text-3xl font-bold text-purple">
         Contact Us
       </h2>
@@ -67,7 +66,7 @@ const ContactForm = () => {
             className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"
           />
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
+      <div className="container max-w-7xl mx-auto px-4 py-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-8 mx-auto">
           
           {/* Contact Form */}

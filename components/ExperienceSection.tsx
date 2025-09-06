@@ -1,5 +1,4 @@
 'use client'
-import React,{useMemo} from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, ExternalLink, Code, Users, Trophy } from 'lucide-react';
 
@@ -67,17 +66,17 @@ const containerVariants = {
   }
 };
 const cardVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 50,
     scale: 0.95
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     scale: 1,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 100,
       damping: 15
     }
@@ -89,7 +88,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <section className="container max-w-7xl w-full sm:px-4 py-10 relative">
+    <section className="container w-full sm:px-4 py-10 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div 
