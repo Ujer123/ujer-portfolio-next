@@ -5,7 +5,6 @@ import {
   Send,
   Mail,
   Phone,
-  MessageSquare,
   Github,
   Linkedin,
   Facebook,
@@ -51,9 +50,11 @@ const ContactForm = () => {
       );
       alert("Email sent successfully!");
       setFormData({ fullName: "", email: "", message: "" });
-    } catch (error: any) {
-      alert("Failed to send email: " + (error?.text || "Unknown error"));
-    }
+    } catch (error: unknown) {
+  const err = error as { text?: string; message?: string };
+  alert("Failed to send email: " + (err.text || err.message || "Unknown error"));
+}
+
   };
 
   return (
