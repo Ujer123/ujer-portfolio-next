@@ -11,8 +11,8 @@ import {
   Facebook,
   Instagram,
   Sparkles
-} from 'lucide-react'
-import emailjs from '@emailjs/browser';
+} from '@/components/ui/Icon'
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const ContactForm = () => {
     }))
   }
 
-   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const templateParams = {
@@ -40,20 +40,20 @@ const ContactForm = () => {
       message: formData.message
     };
 
-    emailjs
-      .send(
+    try {
+      const emailjsModule = await import('@emailjs/browser');
+      const emailjs = emailjsModule.default ?? emailjsModule;
+      await emailjs.send(
         "service_7sbguua",
         "template_bkxjqh1",
         templateParams,
         "SOxAymPFbK2Ga3R17"
-      )
-      .then(() => {
-        alert("Email sent successfully!");
-        setFormData({ fullName: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        alert("Failed to send email: " + error.text);
-      });
+      );
+      alert("Email sent successfully!");
+      setFormData({ fullName: "", email: "", message: "" });
+    } catch (error: any) {
+      alert("Failed to send email: " + (error?.text || "Unknown error"));
+    }
   };
 
   return (
@@ -202,10 +202,10 @@ const ContactForm = () => {
     >
       <div className="w-10 h-10 bg-teal-500/20 rounded-lg flex items-center justify-center
                       group-hover:scale-110 transition-transform duration-300">
-        <MessageSquare className="w-5 h-5 text-teal-400" />
+        <FaWhatsapp className="w-5 h-5 text-teal-400" />
       </div>
       <div>
-        <p className="text-slate-300 text-sm">Message</p>
+        <p className="text-slate-300 text-sm">Whatsapp</p>
         <p className="text-white font-medium text-sm">+91 9136767042</p>
       </div>
     </a>

@@ -8,22 +8,24 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { 
-  FaHome, 
-  FaUser, 
-  FaProjectDiagram, 
-  FaBriefcase, 
-  FaEnvelope, 
-  FaBars, 
-  FaTimes 
-} from "react-icons/fa";
+import {
+  Home,
+  User,
+  GitBranch,
+  Briefcase,
+  Mail,
+  Menu,
+  X,
+  Sparkles,
+} from '@/components/ui/Icon';
 
 const navIcons: { [key: string]: React.ReactNode } = {
-  "Home": <FaHome className="w-4 h-4" />,
-  "About": <FaUser className="w-4 h-4" />,
-  "Projects": <FaProjectDiagram className="w-4 h-4" />,
-  "Experience": <FaBriefcase className="w-4 h-4" />,
-  "Contact": <FaEnvelope className="w-4 h-4" />,
+  "Home": <Home className="w-4 h-4" />,
+  "About": <User className="w-4 h-4" />,
+  "Skills": <Sparkles className="w-4 h-4" />,
+  "Projects": <GitBranch className="w-4 h-4" />,
+  "Experience": <Briefcase className="w-4 h-4" />,
+  "Contact": <Mail className="w-4 h-4" />,
 };
 
 export const FloatingNav = ({
@@ -170,9 +172,9 @@ export const FloatingNav = ({
                   transition={{ duration: 0.2 }}
                 >
                   {isMobileMenuOpen ? (
-                    <FaTimes className="w-5 h-5" />
+                    <X className="w-5 h-5" />
                   ) : (
-                    <FaBars className="w-5 h-5" />
+                    <Menu className="w-5 h-5" />
                   )}
                 </motion.div>
               </AnimatePresence>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowUp } from 'react-icons/fa6';
+import { ArrowUp } from '@/components/ui/Icon';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -85,7 +85,7 @@ const ScrollToTopButton = () => {
               transition={{ duration: 0.2 }}
               className="relative z-10"
             >
-              <FaArrowUp className="w-5 h-5" />
+              <ArrowUp className="w-5 h-5" />
             </motion.div>
           </motion.button>
         </motion.div>

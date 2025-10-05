@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaLocationArrow } from 'react-icons/fa6';
+import { FaLocationArrow } from "react-icons/fa";
 
 import { cn } from '@/lib/utils';
-import { SECTION_IDS } from '@/config/site';
+import { SECTION_IDS } from '../config/site';
 
 import { Spotlight } from './ui/spotlight';
 import { TextGenerateEffect } from './ui/text-generate-effect';
@@ -18,7 +18,7 @@ interface HeroProps {
 
 const HERO_CONTENT = {
   subtitle: 'MERN Stack Developer',
-  title: 'Code That Speaks,\nDesigns That Convert',
+  title: 'Code That Speaks,Designs That Convert',
   description: "Hi, I'm Ujer, a full-stack developer who turns complex business challenges into elegant, scalable web applications. 2+ years of experience. Clean code, smooth performance, real results.",
   ctaText: 'Show My Work'
 } as const;
@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
             >
               <MagicButton
                 title={HERO_CONTENT.ctaText}
-                icon={<FaLocationArrow className="ml-2" />}
+                icon={<FaLocationArrow  className="ml-2" />}
                 position="right"
                 asChild
               />

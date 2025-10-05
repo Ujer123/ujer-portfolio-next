@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, ExternalLink, Code, Users, Trophy } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, Code, Users, Trophy } from '@/components/ui/Icon';
 
 const experiences = [
   {

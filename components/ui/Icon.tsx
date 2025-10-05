@@ -1,0 +1,83 @@
+import {
+  Send,
+  Mail,
+  Phone,
+  MessageSquare,
+  Github,
+  Linkedin,
+  Facebook,
+  Instagram,
+  Sparkles,
+  Calendar, 
+  MapPin, 
+  ExternalLink, 
+  Code, 
+  Users, 
+  Trophy,
+  Navigation,
+  ArrowUp,
+  X,
+  Home,
+  User,
+  GitBranch,
+  Briefcase,
+  Menu,
+} from 'lucide-react'
+
+import { FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaGithubSquare } from "react-icons/fa";
+import { DiNodejs } from "react-icons/di";
+import {
+  RiNpmjsFill,
+  RiNextjsFill,
+  RiReactjsFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import { VscJson } from "react-icons/vsc";
+import { TbBrandThreejs, TbWorld } from "react-icons/tb";
+import { SiMongodb, SiFramer, SiGreensock } from "react-icons/si";
+import { AiOutlineOpenAI } from "react-icons/ai";
+import { FaDev } from "react-icons/fa6";
+
+export {
+    Send,
+    Mail,
+    Phone,
+    MessageSquare,
+    Github,
+    Linkedin,
+    Facebook,
+    Instagram,
+    Sparkles,
+    Calendar, 
+    MapPin, 
+    ExternalLink, 
+    Code, 
+    Users, 
+    Trophy,
+    Navigation,
+    ArrowUp,
+    X,
+    Home,
+    User,
+    GitBranch,
+    Briefcase,
+    Menu,
+    FaJs, 
+    FaNodeJs, 
+    FaHtml5, 
+    FaCss3Alt, 
+    FaGithubSquare,
+    DiNodejs,
+    RiNpmjsFill,
+    RiNextjsFill,
+    RiReactjsFill,
+    RiTailwindCssFill,
+    VscJson,
+    TbBrandThreejs, 
+    TbWorld,
+    SiMongodb, 
+    SiFramer, 
+    SiGreensock,
+    AiOutlineOpenAI,
+    FaDev,
+}

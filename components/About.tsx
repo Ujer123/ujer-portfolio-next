@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import About_1 from '@/public/about-1.jpg'
 import { SECTION_IDS } from '@/config/site';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -54,9 +55,9 @@ const About = () => {
             </p>
 
             <div className="flex justify-center md:justify-start">
-              <button className="bg-purple text-black px-6 py-2 rounded-lg hover:bg-purple-600 transition">
+              <Link href={`#${SECTION_IDS.CONTACT}`} className="bg-purple text-black px-6 py-2 rounded-lg hover:bg-purple-600 transition">
                 Contact Me
-              </button>
+              </Link>
             </div>
           </div>
         </div>

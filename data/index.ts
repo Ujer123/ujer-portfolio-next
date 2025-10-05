@@ -1,18 +1,25 @@
 import type { NavItem, Skill, Project, Experience } from '@/types';
 import { SECTION_IDS } from '@/config/site';
-import { FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaGithubSquare } from "react-icons/fa";
-import { DiNodejs } from "react-icons/di";
-import {
+import { 
+  FaJs, 
+  FaNodeJs, 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaGithubSquare, 
+  DiNodejs,
   RiNpmjsFill,
   RiNextjsFill,
   RiReactjsFill,
   RiTailwindCssFill,
-} from "react-icons/ri";
-import { VscJson } from "react-icons/vsc";
-import { TbBrandThreejs, TbWorld } from "react-icons/tb";
-import { SiMongodb, SiFramer, SiGreensock } from "react-icons/si";
-import { AiOutlineOpenAI } from "react-icons/ai";
-import { FaDev } from "react-icons/fa6";
+  VscJson,
+  TbBrandThreejs, 
+  TbWorld,
+  SiMongodb, 
+  SiFramer, 
+  SiGreensock,
+  AiOutlineOpenAI,
+  FaDev 
+} from "@/components/ui/Icon";
 
 export const navItems: NavItem[] = [
   { name: "Home", link: `#${SECTION_IDS.HOME}` },
