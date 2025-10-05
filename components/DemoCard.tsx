@@ -126,10 +126,10 @@ export default function ProjectsShowcase() {
 
                 {/* Action Links */}
                 <div className="flex gap-3 pt-3 border-t border-gray-700/50">
-                  <Link href={`${project.link}`} target="_blank" className="flex-1 py-2 text-center px-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                  <a href={project.link} target="_blank" className="flex-1 py-2 text-center px-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900">
                     View Project
-                  </Link>
-                  <a href={`${project.github}`} target="_blank" className="py-2 px-4 border border-gray-600 hover:border-purple-500 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                  </a>
+                  <a href={project.github} target="_blank" className="py-2 px-4 border border-gray-600 hover:border-purple-500 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900">
                     Code
                   </a>
                 </div>
